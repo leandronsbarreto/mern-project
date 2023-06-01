@@ -1,7 +1,5 @@
-const getInvolved = () => {
-    return (
-        <h1>This is getInvolved</h1>
-    )
-}
+const GetInvolved = () => {
+  return <h1>This is GetInvolved</h1>;
+};
 
-export default getInvolved;
+export default GetInvolved;
