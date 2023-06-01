@@ -1,7 +1,5 @@
-const donate = () => {
-    return (
-        <h1>This is donate</h1>
-    )
-}
+const Donate = () => {
+  return <h1>This is Donate</h1>;
+};
 
-export default donate;
+export default Donate;
