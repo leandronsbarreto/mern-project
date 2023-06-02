@@ -1,5 +1,15 @@
+import Header from '../components/Header';
+import Content from '../components/Content';
+import Footer from '../components/Footer';
+
 const Home = () => {
-  return <h1>This is home</h1>;
+  return (
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
+  );
 };
 
 export default Home;
