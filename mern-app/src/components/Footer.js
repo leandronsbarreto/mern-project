@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import styleFooter from '../styles/styleFooter';
-import data from '../data/data.json';
+import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
 
 const Footer = () => {
@@ -36,12 +36,6 @@ const Footer = () => {
       {/* Up to 284px, Portrait and Landscape     */}
       {isVerySmall && (
         <footer style={styleFooter.containerFooter}>
-          <div style={styleFooter.footerTopPart}>
-            <button style={styleFooter.footerButtonOneVerySmall}>
-              <div>{data.home.more}</div>
-              <div>{data.home.dots}</div>
-            </button>
-          </div>
           <div style={styleFooter.footerBottomPart}>
             <div style={styleFooter.containerElementsfooterBottomPart}>
               <div style={styleFooter.followVerySmall}>{data.home.follow}</div>
