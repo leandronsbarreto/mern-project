@@ -15,7 +15,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --config .prettierrc.json \"./**/*.js\" \"./**/*.css\" --write",
+    "format": "prettier --config .prettierrc.json \"./**/*.js\" \"./**/*.css\" \"./**/*.json\" --write",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
