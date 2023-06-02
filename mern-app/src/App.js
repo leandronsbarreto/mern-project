@@ -4,6 +4,7 @@ import GetInvolved from './pages/get_involved';
 import Login from './pages/login';
 import NewsPress from './pages/news_press';
 import NotFoundPage from './pages/not_found';
+import HomeMore from './pages/home_more';
 import styleApp from './styles/styleApp';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/donate' element={<Donate />} />
           <Route path='/login' element={<Login />} />
           <Route path='/getinvolved' element={<GetInvolved />} />
+          <Route path='/home/more' element={<HomeMore />} />
           <Route path='/articles' element={<NewsPress />} />
           <Route path='/articles/:articleId' element={<NewsPress />} />
           <Route path='*' element={<NotFoundPage />} />
