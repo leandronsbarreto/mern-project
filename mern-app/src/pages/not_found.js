@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import styleNotFound from '../styles/stylenot_found';
 
 const NotFoundPage = () => {
