@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import styleFooter from '../styles/styleFooter';
 import data from '../data/data.json';
 import { useMediaQuery } from 'react-responsive';
@@ -37,13 +38,13 @@ const Footer = () => {
         <footer style={styleFooter.containerFooter}>
           <div style={styleFooter.footerTopPart}>
             <button style={styleFooter.footerButtonOneVerySmall}>
-              <div>{data[0].more}</div>
-              <div>{data[0].dots}</div>
+              <div>{data.home.more}</div>
+              <div>{data.home.dots}</div>
             </button>
           </div>
           <div style={styleFooter.footerBottomPart}>
             <div style={styleFooter.containerElementsfooterBottomPart}>
-              <div style={styleFooter.followVerySmall}>{data[0].follow}</div>
+              <div style={styleFooter.followVerySmall}>{data.home.follow}</div>
               <div style={styleFooter.containerImagesFooterBottomPart}>
                 <img
                   style={styleFooter.imagesFooterBottomPartVerySmall}
@@ -80,13 +81,13 @@ const Footer = () => {
         <footer style={styleFooter.containerFooter}>
           <div style={styleFooter.footerTopPart}>
             <button style={styleFooter.footerButtonOneMobile}>
-              <div>{data[0].more}</div>
-              <div>{data[0].dots}</div>
+              <div>{data.home.more}</div>
+              <div>{data.home.dots}</div>
             </button>
           </div>
           <div style={styleFooter.footerBottomPart}>
             <div style={styleFooter.containerElementsfooterBottomPart}>
-              <div style={styleFooter.followMobile}>{data[0].follow}</div>
+              <div style={styleFooter.followMobile}>{data.home.follow}</div>
               <div style={styleFooter.containerImagesFooterBottomPart}>
                 <img
                   style={styleFooter.imagesFooterBottomPartMobile}
@@ -123,13 +124,13 @@ const Footer = () => {
         <footer style={styleFooter.containerFooter}>
           <div style={styleFooter.footerTopPart}>
             <button style={styleFooter.footerButtonOneTablet}>
-              <div>{data[0].more}</div>
-              <div>{data[0].dots}</div>
+              <div>{data.home.more}</div>
+              <div>{data.home.dots}</div>
             </button>
           </div>
           <div style={styleFooter.footerBottomPart}>
             <div style={styleFooter.containerElementsfooterBottomPart}>
-              <div style={styleFooter.followTablet}>{data[0].follow}</div>
+              <div style={styleFooter.followTablet}>{data.home.follow}</div>
               <div style={styleFooter.containerImagesFooterBottomPart}>
                 <img
                   style={styleFooter.imagesFooterBottomPartTablet}
