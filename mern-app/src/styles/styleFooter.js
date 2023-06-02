@@ -37,8 +37,7 @@ const styleFooter = {
   //Very small
   footerButtonOneVerySmall: {
     cursor: 'pointer',
-    backgroundColor: 'var(--dark-green)',
-    color: 'var(--white)',
+    backgroundColor: 'var(--light-green)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -49,15 +48,15 @@ const styleFooter = {
     borderRadius: 'clamp(0.1875rem, 0.1741rem + 0.4274vw, 0.25rem)',
     padding: '0.125rem',
     fontFamily: 'Barlow',
-    fontSize: 'clamp(0.3125rem, 0.2457rem + 2.1368vw, 0.625rem)'
+    fontSize: 'clamp(0.3125rem, 0.2457rem + 2.1368vw, 0.625rem)',
+    fontWeight: '500'
   },
 
   //<button style={styleFooter.footerButtonOneMobile}>
   //Mobile
   footerButtonOneMobile: {
     cursor: 'pointer',
-    backgroundColor: 'var(--dark-green)',
-    color: 'var(--white)',
+    backgroundColor: 'var(--light-green)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -69,6 +68,7 @@ const styleFooter = {
     padding: '0.2rem',
     fontFamily: 'Barlow',
     fontSize: 'clamp(0.625rem, 0.3648rem + 8.1633vw, 0.875rem)',
+    fontWeight: '500',
     textAlign: 'center'
   },
 
@@ -76,8 +76,7 @@ const styleFooter = {
   //Tablet
   footerButtonOneTablet: {
     cursor: 'pointer',
-    backgroundColor: 'var(--dark-green)',
-    color: 'var(--white)',
+    backgroundColor: 'var(--light-green)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -88,7 +87,8 @@ const styleFooter = {
     borderRadius: 'clamp(0.1875rem, 0.0828rem + 0.3484vw, 0.25rem)',
     padding: '0.5rem',
     fontFamily: 'Barlow',
-    fontSize: 'clamp(0.875rem, 0.6173rem + 4.0816vw, 1rem)'
+    fontSize: 'clamp(0.875rem, 0.6173rem + 4.0816vw, 1rem)',
+    fontWeight: '500'
   },
 
   //<div style={styleFooter.containerElementsfooterBottomPart}>
@@ -107,21 +107,24 @@ const styleFooter = {
   //Very small
   followVerySmall: {
     fontFamily: 'Barlow',
-    fontSize: 'clamp(0.3125rem, 0.2457rem + 2.1368vw, 0.625rem)'
+    fontSize: 'clamp(0.3125rem, 0.2457rem + 2.1368vw, 0.625rem)',
+    fontWeight: '500'
   },
 
   //<div style={styleFooter.followMobile}>{data[0].follow}</div>
   //Mobile
   followMobile: {
     fontFamily: 'Barlow',
-    fontSize: 'clamp(0.625rem, 0.3648rem + 8.1633vw, 0.875rem)'
+    fontSize: 'clamp(0.625rem, 0.3648rem + 8.1633vw, 0.875rem)',
+    fontWeight: '500'
   },
 
   //<div style={styleFooter.followTablet}>{data[0].follow}</div>
   //Tablet
   followTablet: {
     fontFamily: 'Barlow',
-    fontSize: 'clamp(0.875rem, 0.6173rem + 4.0816vw, 1rem)'
+    fontSize: 'clamp(0.875rem, 0.6173rem + 4.0816vw, 1rem)',
+    fontWeight: '500'
   },
 
   //<div style={styleFooter.containerImagesFooterBottomPart}>
