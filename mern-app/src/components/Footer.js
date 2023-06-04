@@ -4,9 +4,7 @@ import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
 
 const Footer = () => {
-  {
-    /* window.open -> click event     */
-  }
+  //window.open -> click event
   const handleClickYT = () => {
     window.open('http://www.youtube.com', '_blank');
   };
@@ -20,9 +18,7 @@ const Footer = () => {
     window.open('http://www.twitter.com', '_blank');
   };
 
-  {
-    /* Media queries     */
-  }
+  //Media queries
   const isVerySmall = useMediaQuery({ query: '(max-width: 284px)' });
   const isMobile = useMediaQuery({
     query: '(min-width: 285px) and (max-width: 480px)'
@@ -33,33 +29,33 @@ const Footer = () => {
 
   return (
     <>
-      {/* Up to 284px, Portrait and Landscape     */}
+      {/* Up to 284px, Portrait and Landscape*/}
       {isVerySmall && (
         <footer style={styleFooter.containerFooter}>
-          <div style={styleFooter.footerBottomPart}>
-            <div style={styleFooter.containerElementsfooterBottomPart}>
-              <div style={styleFooter.followVerySmall}>{data.home.follow}</div>
-              <div style={styleFooter.containerImagesFooterBottomPart}>
+          <div style={styleFooter.footerPart}>
+            <div style={styleFooter.containerElementsfooterPart}>
+              <div style={styleFooter.follow}>{data.home.follow}</div>
+              <div style={styleFooter.containerImagesFooterPart}>
                 <img
-                  style={styleFooter.imagesFooterBottomPartVerySmall}
+                  style={styleFooter.imagesFooterPartVerySmall}
                   src={process.env.PUBLIC_URL + '/images/instagram.png'}
                   alt='Instagram logo'
                   onClick={handleClickInst}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartVerySmall}
+                  style={styleFooter.imagesFooterPartVerySmall}
                   src={process.env.PUBLIC_URL + '/images/twitter.png'}
                   alt='Twitter logo'
                   onClick={handleClickTW}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartVerySmall}
+                  style={styleFooter.imagesFooterPartVerySmall}
                   src={process.env.PUBLIC_URL + '/images/facebook.png'}
                   alt='Facebook logo'
                   onClick={handleClickFB}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartVerySmall}
+                  style={styleFooter.imagesFooterPartVerySmall}
                   src={process.env.PUBLIC_URL + '/images/youtube.png'}
                   alt='YouTube logo'
                   onClick={handleClickYT}
@@ -70,39 +66,33 @@ const Footer = () => {
         </footer>
       )}
 
-      {/* Mobile devices, Portrait     */}
+      {/* Mobile devices, Portrait and Landscape*/}
       {isMobile && (
         <footer style={styleFooter.containerFooter}>
-          <div style={styleFooter.footerTopPart}>
-            <button style={styleFooter.footerButtonOneMobile}>
-              <div>{data.home.more}</div>
-              <div>{data.home.dots}</div>
-            </button>
-          </div>
-          <div style={styleFooter.footerBottomPart}>
-            <div style={styleFooter.containerElementsfooterBottomPart}>
-              <div style={styleFooter.followMobile}>{data.home.follow}</div>
-              <div style={styleFooter.containerImagesFooterBottomPart}>
+          <div style={styleFooter.footerPart}>
+            <div style={styleFooter.containerElementsfooterPart}>
+              <div style={styleFooter.follow}>{data.home.follow}</div>
+              <div style={styleFooter.containerImagesFooterPart}>
                 <img
-                  style={styleFooter.imagesFooterBottomPartMobile}
+                  style={styleFooter.imagesFooterPartMobile}
                   src={process.env.PUBLIC_URL + '/images/instagram.png'}
                   alt='Instagram logo'
                   onClick={handleClickInst}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartMobile}
+                  style={styleFooter.imagesFooterPartMobile}
                   src={process.env.PUBLIC_URL + '/images/twitter.png'}
                   alt='Twitter logo'
                   onClick={handleClickTW}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartMobile}
+                  style={styleFooter.imagesFooterPartMobile}
                   src={process.env.PUBLIC_URL + '/images/facebook.png'}
                   alt='Facebook logo'
                   onClick={handleClickFB}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartMobile}
+                  style={styleFooter.imagesFooterPartMobile}
                   src={process.env.PUBLIC_URL + '/images/youtube.png'}
                   alt='YouTube logo'
                   onClick={handleClickYT}
@@ -113,39 +103,33 @@ const Footer = () => {
         </footer>
       )}
 
-      {/* iPads, tablets, Portrait and Landscape     */}
+      {/* iPads, tablets, Portrait and Landscape*/}
       {isTablet && (
         <footer style={styleFooter.containerFooter}>
-          <div style={styleFooter.footerTopPart}>
-            <button style={styleFooter.footerButtonOneTablet}>
-              <div>{data.home.more}</div>
-              <div>{data.home.dots}</div>
-            </button>
-          </div>
-          <div style={styleFooter.footerBottomPart}>
-            <div style={styleFooter.containerElementsfooterBottomPart}>
-              <div style={styleFooter.followTablet}>{data.home.follow}</div>
-              <div style={styleFooter.containerImagesFooterBottomPart}>
+          <div style={styleFooter.footerPart}>
+            <div style={styleFooter.containerElementsfooterPart}>
+              <div style={styleFooter.follow}>{data.home.follow}</div>
+              <div style={styleFooter.containerImagesFooterPart}>
                 <img
-                  style={styleFooter.imagesFooterBottomPartTablet}
+                  style={styleFooter.imagesFooterPartTablet}
                   src={process.env.PUBLIC_URL + '/images/instagram.png'}
                   alt='Instagram logo'
                   onClick={handleClickInst}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartTablet}
+                  style={styleFooter.imagesFooterPartTablet}
                   src={process.env.PUBLIC_URL + '/images/twitter.png'}
                   alt='Twitter logo'
                   onClick={handleClickTW}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartTablet}
+                  style={styleFooter.imagesFooterPartTablet}
                   src={process.env.PUBLIC_URL + '/images/facebook.png'}
                   alt='Facebook logo'
                   onClick={handleClickFB}
                 />
                 <img
-                  style={styleFooter.imagesFooterBottomPartTablet}
+                  style={styleFooter.imagesFooterPartTablet}
                   src={process.env.PUBLIC_URL + '/images/youtube.png'}
                   alt='YouTube logo'
                   onClick={handleClickYT}
