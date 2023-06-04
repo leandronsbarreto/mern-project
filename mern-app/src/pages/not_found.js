@@ -5,7 +5,7 @@ const NotFoundPage = () => {
   return (
     <>
       <div style={styleNotFound.containerNotFound}>
-        <h1>Ops! Page not found.</h1>
+        <h1 style={styleNotFound.h1}>Ops! Page not found.</h1>
         <div style={styleNotFound.containerImgNotFound}>
           <img
             style={styleNotFound.imgNotFound}
