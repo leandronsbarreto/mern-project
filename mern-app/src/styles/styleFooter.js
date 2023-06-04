@@ -6,94 +6,25 @@ const styleFooter = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    height: '15vh',
+    height: '10vh',
     width: '100%'
   },
 
-  //<div style={styleFooter.footerTopPart}>
+  //<div style={styleFooter.footerPart}>
   //Very small, mobile, tablet
-  footerTopPart: {
-    backgroundColor: 'var(--white)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '70%',
-    width: '40%'
-  },
-
-  //<div style={styleFooter.footerBottomPart}>
-  //Very small, mobile, tablet
-  footerBottomPart: {
+  footerPart: {
     backgroundColor: 'var(--white)',
     color: 'var(--black)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    width: '40%'
+    width: '70%'
   },
 
-  //<button style={styleFooter.footerButtonOneVerySmall}>
-  //Very small
-  footerButtonOneVerySmall: {
-    cursor: 'pointer',
-    backgroundColor: 'var(--light-green)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    height: 'auto',
-    width: 'clamp(1.5625rem, 1.2286rem + 10.6838vw, 3.125rem)',
-    border: 'none',
-    borderRadius: 'clamp(0.1875rem, 0.1741rem + 0.4274vw, 0.25rem)',
-    padding: '0.125rem',
-    fontFamily: 'Barlow',
-    fontSize: 'clamp(0.3125rem, 0.2457rem + 2.1368vw, 0.625rem)',
-    fontWeight: '500'
-  },
-
-  //<button style={styleFooter.footerButtonOneMobile}>
-  //Mobile
-  footerButtonOneMobile: {
-    cursor: 'pointer',
-    backgroundColor: 'var(--light-green)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    height: 'auto',
-    width: 'clamp(3.1875rem, -1.2885rem + 25.1282vw, 6.25rem)',
-    border: 'none',
-    borderRadius: 'clamp(0.1875rem, 0.0962rem + 0.5128vw, 0.25rem)',
-    padding: '0.2rem',
-    fontFamily: 'Barlow',
-    fontSize: 'clamp(0.625rem, 0.3648rem + 8.1633vw, 0.875rem)',
-    fontWeight: '500',
-    textAlign: 'center'
-  },
-
-  //<button style={styleFooter.footerButtonOneTablet}>
-  //Tablet
-  footerButtonOneTablet: {
-    cursor: 'pointer',
-    backgroundColor: 'var(--light-green)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    height: 'auto',
-    width: 'clamp(6.3125rem, 1.1799rem + 17.0732vw, 9.375rem)',
-    border: 'none',
-    borderRadius: 'clamp(0.1875rem, 0.0828rem + 0.3484vw, 0.25rem)',
-    padding: '0.5rem',
-    fontFamily: 'Barlow',
-    fontSize: 'clamp(0.875rem, 0.6173rem + 4.0816vw, 1rem)',
-    fontWeight: '500'
-  },
-
-  //<div style={styleFooter.containerElementsfooterBottomPart}>
+  //<div style={styleFooter.containerElementsfooterPart}>
   //Very small, mobile, tablet
-  containerElementsfooterBottomPart: {
+  containerElementsfooterPart: {
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
@@ -103,33 +34,16 @@ const styleFooter = {
     width: '90%'
   },
 
-  //<div style={styleFooter.followVerySmall}>{data[0].follow}</div>
-  //Very small
-  followVerySmall: {
-    fontFamily: 'Barlow',
-    fontSize: 'clamp(0.3125rem, 0.2457rem + 2.1368vw, 0.625rem)',
-    fontWeight: '500'
-  },
-
-  //<div style={styleFooter.followMobile}>{data[0].follow}</div>
-  //Mobile
-  followMobile: {
-    fontFamily: 'Barlow',
-    fontSize: 'clamp(0.625rem, 0.3648rem + 8.1633vw, 0.875rem)',
-    fontWeight: '500'
-  },
-
   //<div style={styleFooter.followTablet}>{data[0].follow}</div>
   //Tablet
-  followTablet: {
-    fontFamily: 'Barlow',
-    fontSize: 'clamp(0.875rem, 0.6173rem + 4.0816vw, 1rem)',
+  follow: {
+    fontSize: 'clamp(0.5rem, 0.4652rem + 1.1142vw, 1rem)',
     fontWeight: '500'
   },
 
-  //<div style={styleFooter.containerImagesFooterBottomPart}>
+  //<div style={styleFooter.containerImagesFooterPart}>
   //Very small, mobile, tablet
-  containerImagesFooterBottomPart: {
+  containerImagesFooterPart: {
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
@@ -138,25 +52,25 @@ const styleFooter = {
     width: '70%'
   },
 
-  //<img style={styleFooter.imagesFooterBottomPartVerySmall}/>
+  //<img style={styleFooter.imagesFooterPartVerySmall}/>
   //Very small
-  imagesFooterBottomPartVerySmall: {
+  imagesFooterPartVerySmall: {
     height: 'auto',
-    width: '0.775rem'
+    width: '0.8rem'
   },
 
-  //<img style={styleFooter.imagesFooterBottomMobile}/>
+  //<img style={styleFooter.imagesFooterMobile}/>
   //Mobile
-  imagesFooterBottomPartMobile: {
-    height: 'auto',
-    width: '0.875rem'
-  },
-
-  //<img style={styleFooter.imagesFooterBottomTablet}/>
-  //Tablet
-  imagesFooterBottomPartTablet: {
+  imagesFooterPartMobile: {
     height: 'auto',
     width: '0.9rem'
+  },
+
+  //<img style={styleFooter.imagesFooterTablet}/>
+  //Tablet
+  imagesFooterPartTablet: {
+    height: 'auto',
+    width: '1rem'
   }
 };
 
