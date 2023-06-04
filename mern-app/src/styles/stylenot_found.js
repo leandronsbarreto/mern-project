@@ -1,7 +1,7 @@
 const styleNotFound = {
   //<div style={styleNotFound.containerNotFound}>
   containerNotFound: {
-    color: 'var(--dark-green)',
+    color: 'var(--black)',
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
@@ -17,7 +17,12 @@ const styleNotFound = {
     alignItems: 'center',
     flexDirection: 'column',
     minHeight: 'auto',
-    width: '80%'
+    width: '80%',
+    fontSize: 'clamp(0.75rem, 0.7326rem + 0.0348vw, 1rem)'
+  },
+
+  h1: {
+    fontSize: 'clamp(1.25rem, 1.2298rem + 0.6452vw, 1.875rem)'
   },
 
   //<img style={styleNotFound.imgNotFound}>
