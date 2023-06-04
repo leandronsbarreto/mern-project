@@ -1,0 +1,23 @@
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mySlides {
+  display: none;
+  justify-content: 'center';
+  align-items: 'center';
+  flex-direction: 'row';
+  height: '35vh';
+  width: '95%';
+}
