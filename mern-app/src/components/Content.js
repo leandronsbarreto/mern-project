@@ -35,7 +35,7 @@ const Content = () => {
             <img
               style={styleContent.coverImgMobile}
               src={process.env.PUBLIC_URL + '/images/julie-ricard-small.jpg'}
-              alt={data.home.titleImg}
+              alt={data.home.altAboutImg}
             />
           </div>
           <div style={styleContent.menuBox}>
@@ -67,7 +67,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/getinvolved.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altInvolvedImg}
                     />
                   </div>
                 </div>
@@ -90,7 +90,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/news.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altNewsImg}
                     />
                   </div>
                 </div>
@@ -111,7 +111,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/donate.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altDonateImg}
                     />
                   </div>
                 </div>
@@ -138,7 +138,8 @@ const Content = () => {
             <img
               style={styleContent.coverImgMobile}
               src={process.env.PUBLIC_URL + '/images/tom-peyre-costa.jpg'}
-              alt={data.home.titleImg}
+              alt={data.home.altCoverImg1}
+              title={data.home.titleCoverImg1}
             />
           </div>
           <div style={styleContent.menuBox}>
@@ -149,7 +150,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/aboutus.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altAboutImg}
                     />
                   </div>
                 </div>
@@ -170,7 +171,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/getinvolved.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altInvolvedImg}
                     />
                   </div>
                 </div>
@@ -193,7 +194,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/news.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altNewsImg}
                     />
                   </div>
                 </div>
@@ -214,7 +215,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/donate.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altDonateImg}
                     />
                   </div>
                 </div>
@@ -241,7 +242,8 @@ const Content = () => {
             <img
               style={styleContent.coverImgTablet}
               src={process.env.PUBLIC_URL + '/images/tom-peyre-costa.jpg'}
-              alt={data.home.titleImg}
+              alt={data.home.altCoverImg1}
+              title={data.home.titleCoverImg1}
             />
           </div>
           <div style={styleContent.menuBox}>
@@ -252,7 +254,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/aboutus.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altAboutImg}
                     />
                   </div>
                 </div>
@@ -273,7 +275,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/getinvolved.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altInvolvedImg}
                     />
                   </div>
                 </div>
@@ -296,7 +298,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/news.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altNewsImg}
                     />
                   </div>
                 </div>
@@ -317,7 +319,7 @@ const Content = () => {
                     <img
                       style={styleContent.imgMiniBlock}
                       src={process.env.PUBLIC_URL + '/images/donate.png'}
-                      alt={data.home.titleImg}
+                      alt={data.home.altDonateImg}
                     />
                   </div>
                 </div>
