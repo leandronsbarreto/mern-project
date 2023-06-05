@@ -2,6 +2,12 @@
 import styleFooter from '../styles/styleFooter';
 import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
+import {
+  SlSocialYoutube,
+  SlSocialFacebook,
+  SlSocialTwitter,
+  SlSocialInstagram
+} from 'react-icons/sl';
 
 const Footer = () => {
   //window.open -> click event
@@ -36,30 +42,30 @@ const Footer = () => {
             <div style={styleFooter.containerElementsfooterPart}>
               <div style={styleFooter.follow}>{data.home.follow}</div>
               <div style={styleFooter.containerImagesFooterPart}>
-                <img
+                <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  src={process.env.PUBLIC_URL + '/images/instagram.png'}
-                  alt='Instagram logo'
                   onClick={handleClickInst}
-                />
-                <img
+                >
+                  <SlSocialInstagram />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  src={process.env.PUBLIC_URL + '/images/twitter.png'}
-                  alt='Twitter logo'
                   onClick={handleClickTW}
-                />
-                <img
+                >
+                  <SlSocialTwitter />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  src={process.env.PUBLIC_URL + '/images/facebook.png'}
-                  alt='Facebook logo'
                   onClick={handleClickFB}
-                />
-                <img
+                >
+                  <SlSocialFacebook />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  src={process.env.PUBLIC_URL + '/images/youtube.png'}
-                  alt='YouTube logo'
                   onClick={handleClickYT}
-                />
+                >
+                  <SlSocialYoutube />
+                </div>
               </div>
             </div>
           </div>
@@ -73,30 +79,30 @@ const Footer = () => {
             <div style={styleFooter.containerElementsfooterPart}>
               <div style={styleFooter.follow}>{data.home.follow}</div>
               <div style={styleFooter.containerImagesFooterPart}>
-                <img
+                <div
                   style={styleFooter.imagesFooterPartMobile}
-                  src={process.env.PUBLIC_URL + '/images/instagram.png'}
-                  alt='Instagram logo'
                   onClick={handleClickInst}
-                />
-                <img
+                >
+                  <SlSocialInstagram />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartMobile}
-                  src={process.env.PUBLIC_URL + '/images/twitter.png'}
-                  alt='Twitter logo'
                   onClick={handleClickTW}
-                />
-                <img
+                >
+                  <SlSocialTwitter />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartMobile}
-                  src={process.env.PUBLIC_URL + '/images/facebook.png'}
-                  alt='Facebook logo'
                   onClick={handleClickFB}
-                />
-                <img
+                >
+                  <SlSocialFacebook />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartMobile}
-                  src={process.env.PUBLIC_URL + '/images/youtube.png'}
-                  alt='YouTube logo'
                   onClick={handleClickYT}
-                />
+                >
+                  <SlSocialYoutube />
+                </div>
               </div>
             </div>
           </div>
@@ -110,30 +116,30 @@ const Footer = () => {
             <div style={styleFooter.containerElementsfooterPart}>
               <div style={styleFooter.follow}>{data.home.follow}</div>
               <div style={styleFooter.containerImagesFooterPart}>
-                <img
+                <div
                   style={styleFooter.imagesFooterPartTablet}
-                  src={process.env.PUBLIC_URL + '/images/instagram.png'}
-                  alt='Instagram logo'
                   onClick={handleClickInst}
-                />
-                <img
+                >
+                  <SlSocialInstagram />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartTablet}
-                  src={process.env.PUBLIC_URL + '/images/twitter.png'}
-                  alt='Twitter logo'
                   onClick={handleClickTW}
-                />
-                <img
+                >
+                  <SlSocialTwitter />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartTablet}
-                  src={process.env.PUBLIC_URL + '/images/facebook.png'}
-                  alt='Facebook logo'
                   onClick={handleClickFB}
-                />
-                <img
+                >
+                  <SlSocialFacebook />
+                </div>
+                <div
                   style={styleFooter.imagesFooterPartTablet}
-                  src={process.env.PUBLIC_URL + '/images/youtube.png'}
-                  alt='YouTube logo'
                   onClick={handleClickYT}
-                />
+                >
+                  <SlSocialYoutube />
+                </div>
               </div>
             </div>
           </div>
