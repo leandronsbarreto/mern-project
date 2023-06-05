@@ -1,5 +1,11 @@
+import Carousel from '../components/Slider';
+
 const Donate = () => {
-  return <h1>This is Donate</h1>;
+  return (
+    <>
+      <Carousel />
+    </>
+  );
 };
 
 export default Donate;
