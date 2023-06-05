@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 :root {
   --white: #ffffff;
   --black: #000000;
   --light-green: #82f2a0;
   --dark-green: #1f6531;
-  --gray: rgb(197, 193, 193, 0.5);
+  --gray: #f4eaea;
 }
 
 * {
@@ -22,6 +20,76 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: 'Barlow';
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 1rem;
+}
+
+/*<div className='slider'>*/
+/*
+*contains: <Slider>
+*
+*/
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 95%;
+}
+
+/*<Slider>*/
+/*
+*Buttons and slides (.containerPhotos) are inside of <Slider>.
+*/
+div.slick-slider.slick-initialized {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 80%;
+  width: 90%;
+}
+
+div.slick-list,
+div.slick-track {
+  height: 100%;
+  width: 100%;
+}
+
+div.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+div.containerPhoto {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/*Arrow buttons*/
+.slick-prev:before,
+.slick-next:before {
+  background-color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 17.812em) {
+  .photo {
+    height: auto;
+    width: 90%
+  }
+}
+
+@media only screen and (min-width: 17.813em) and (max-width: 48em) {
+  .photo {
+    height: auto;
+    width: 70%
+  }
 }
