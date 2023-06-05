@@ -2,6 +2,7 @@
 import styleContent from '../styles/styleContent';
 import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
+import Carousel from './Slider';
 
 const Content = () => {
   //Events
@@ -20,23 +21,14 @@ const Content = () => {
   const isTablet = useMediaQuery({
     query: '(min-width: 481px) and (max-width: 768px)'
   });
+
   return (
     <>
       {/* Up to 284px, Portrait and Landscape */}
       {isVerySmall && (
         <main style={styleContent.containerContent}>
-          <div style={styleContent.containerCoverImg}>
-            <img
-              style={styleContent.coverImgMobile}
-              src={process.env.PUBLIC_URL + '/images/tom-peyre-costa.jpg'}
-              alt={data.home.altCoverImg1}
-              title={data.home.titleCoverImg1}
-            />
-            <img
-              style={styleContent.coverImgMobile}
-              src={process.env.PUBLIC_URL + '/images/julie-ricard-small.jpg'}
-              alt={data.home.altAboutImg}
-            />
+          <div style={styleContent.containerCoverImgVerySmall}>
+            {Carousel()}
           </div>
           <div style={styleContent.menuBox}>
             <div style={styleContent.menuSubBoxTop}>
@@ -134,14 +126,7 @@ const Content = () => {
       {/* Mobile devices, Portrait and Landscape*/}
       {isMobile && (
         <main style={styleContent.containerContent}>
-          <div style={styleContent.containerCoverImg}>
-            <img
-              style={styleContent.coverImgMobile}
-              src={process.env.PUBLIC_URL + '/images/tom-peyre-costa.jpg'}
-              alt={data.home.altCoverImg1}
-              title={data.home.titleCoverImg1}
-            />
-          </div>
+          <div style={styleContent.containerCoverImgMobile}>{Carousel()}</div>
           <div style={styleContent.menuBox}>
             <div style={styleContent.menuSubBoxTop}>
               <div style={styleContent.insideSubBoxTopLeft}>
@@ -238,14 +223,7 @@ const Content = () => {
       {/* iPads, tablets, Portrait and Landscape*/}
       {isTablet && (
         <main style={styleContent.containerContent}>
-          <div style={styleContent.containerCoverImg}>
-            <img
-              style={styleContent.coverImgTablet}
-              src={process.env.PUBLIC_URL + '/images/tom-peyre-costa.jpg'}
-              alt={data.home.altCoverImg1}
-              title={data.home.titleCoverImg1}
-            />
-          </div>
+          <div style={styleContent.containerCoverImgMobile}>{Carousel()}</div>
           <div style={styleContent.menuBox}>
             <div style={styleContent.menuSubBoxTop}>
               <div style={styleContent.insideSubBoxTopLeft}>
