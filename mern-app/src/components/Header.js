@@ -1,7 +1,8 @@
 /* eslint-disable no-undef */
 import styleHeader from '../styles/styleHeader';
 import data from '../data/dataHome.json';
-import { useMediaQuery } from 'react-responsive';
+import { SlLogin } from 'react-icons/sl';
+// import { useMediaQuery } from 'react-responsive';
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
             name='Login button'
             style={styleHeader.buttonHeader}
           >
-            👤 Login
+            <SlLogin /> Login
           </button>
         </div>
       </nav>
