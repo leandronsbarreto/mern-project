@@ -4,22 +4,35 @@ const styleContent = {
   //Portrait
   containerContent: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'column',
     height: '75vh',
-    width: '100%'
+    width: '100%',
+    overflow: 'hidden'
   },
 
   //<div style={styleContent.containerCoverImg}>
-  //Very small, mobile, and tablets
+  //Very small
   //Portrait
-  containerCoverImg: {
+  containerCoverImgVerySmall: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    height: '35vh',
+    height: '30vh',
+    width: '95%'
+  },
+
+  //<div style={styleContent.containerCoverImg}>
+  //Mobile
+  //Portrait
+  containerCoverImgMobile: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    height: '32vh',
     width: '95%'
   },
 
@@ -28,7 +41,8 @@ const styleContent = {
   //Portrait
   coverImgVerySmall: {
     height: 'auto',
-    width: '95%'
+    width: '95%',
+    opacity: '1'
   },
 
   //<img style={styleContent.coverImgMobile}/>
@@ -55,7 +69,7 @@ const styleContent = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    height: '34vh',
+    height: '40vh',
     width: '95%'
   },
 
