@@ -1,0 +1,492 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+}
+
+/* Arrows */
+/*These 2 media queries below adjust the distance of arrows*/
+@media only screen and (max-width: 17.812em) {
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    line-height: 1;
+
+    opacity: 1;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-prev {
+    left: -26px;
+  }
+  [dir='rtl'] .slick-prev {
+    right: auto;
+    left: -26px;
+  }
+  .slick-prev:before {
+    content: '\1F850';
+  }
+  [dir='rtl'] .slick-prev:before {
+    content: '\1F850';
+  }
+
+  .slick-next {
+    right: -22px;
+  }
+  [dir='rtl'] .slick-next {
+    right: -22px;
+    left: auto;
+  }
+  .slick-next:before {
+    content: '\1F852';
+  }
+  [dir='rtl'] .slick-next:before {
+    content: '\1F852';
+  }
+}
+
+@media only screen and (min-width: 17.813em) and (max-width: 48em) {
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 30px;
+    height: 0;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: 1;
+    color: var(--black);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-prev {
+    left: -27px;
+  }
+  [dir='rtl'] .slick-prev {
+    right: 0;
+    left: auto;
+  }
+  .slick-prev:before {
+    content: '\1F850';
+  }
+  [dir='rtl'] .slick-prev:before {
+    content: '\1F850';
+  }
+
+  .slick-next {
+    right: -32px;
+  }
+  [dir='rtl'] .slick-next {
+    right: auto;
+    left: -32px;
+  }
+  .slick-next:before {
+    content: '\1F852';
+  }
+  [dir='rtl'] .slick-next:before {
+    content: '\1F852';
+  }
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -15px;
+
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:before {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 40px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '\22C5';
+  text-align: center;
+
+  opacity: 0.55;
+  color: black;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: black;
+}
+
+/*My settings*/
+/*Plug-in settings are above*/
+
+/*Remove arrows and dots*/
+@media only screen and (max-width: 196px) {
+  .slick-dots li button:before,
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+}
+
+/*Bring arrows back*/
+@media only screen and (min-width: 197px) {
+  .slick-prev:before,
+  .slick-next:before {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+  }
+}
+
+/*As screen's width gets smaller, slider's width reduces too*/
+@media only screen and (max-width: 284px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 285px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 330px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 43%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 38%;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 38%;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 38%;
+  }
+}
+
+div.slick-list {
+  width: 100%;
+}
+
+div.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+}
+
+.photo {
+  border-radius: 10px;
+}
