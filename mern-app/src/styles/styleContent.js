@@ -192,13 +192,12 @@ const styleContent = {
   //Very small, mobile, and tablets
   //Portrait
   arrow: {
-    backgroundColor: 'var(--gray)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '1.875rem',
     width: '1.875rem',
-    borderRadius: '50%'
+    fontSize: '20px'
   }
 };
 
