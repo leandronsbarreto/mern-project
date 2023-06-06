@@ -22,7 +22,7 @@ const styleHeader = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '95%',
+    height: '70%',
     width: '48%',
     borderRadius: '0.938rem'
   },
