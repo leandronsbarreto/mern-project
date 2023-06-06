@@ -2,10 +2,38 @@
 import styleContent from '../styles/styleContent';
 import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
+// import { useEffect } from 'react';
 import Carousel from './Slider';
+import { SlArrowRightCircle } from 'react-icons/sl';
 
 const Content = () => {
   //Events
+  /*   useEffect(() => {
+    const allWithClassRightCircle = Array.from(
+      document.getElementsByClassName('arrowRightCircle')
+    );
+    console.log('I am working');
+    allWithClassRightCircle.forEach(el => {
+      el.addEventListener('mouseover', () => {
+        el.style.backgroundColor = 'var(--gray)';
+        el.style.borderRadius = '50%';
+      });
+      allWithClassRightCircle.forEach(el => {
+        el.addEventListener('mouseout', () => {
+          el.style.backgroundColor = 'transparent';
+        });
+      });
+    });
+  }, []); */
+
+  /*   useEffect(() => {
+    const arrowPrevious = document.querySelector('.slick-arrow.slick-prev');
+    const arrowNext = document.querySelector('.slick-arrow.slick-next');
+    arrowPrevious.addEventListener('click', () => {
+      arrowPrevious.style.backgroundColor = 'var(--gray)';
+    });
+  }, []); */
+
   const handlePage = e => {
     let id = e.target.id;
     id == 'news'
@@ -49,7 +77,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -70,7 +98,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -93,7 +121,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -114,7 +142,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -145,8 +173,9 @@ const Content = () => {
                     id='about'
                     style={styleContent.arrow}
                     onClick={handlePage}
+                    className='arrowRightCircle'
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -166,8 +195,9 @@ const Content = () => {
                     id='getinvolved'
                     style={styleContent.arrow}
                     onClick={handlePage}
+                    className='arrowRightCircle'
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -189,8 +219,9 @@ const Content = () => {
                     id='news'
                     style={styleContent.arrow}
                     onClick={handlePage}
+                    className='arrowRightCircle'
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -210,8 +241,9 @@ const Content = () => {
                     id='donate'
                     style={styleContent.arrow}
                     onClick={handlePage}
+                    className='arrowRightCircle'
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -243,7 +275,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -264,7 +296,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -287,7 +319,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
@@ -308,7 +340,7 @@ const Content = () => {
                     style={styleContent.arrow}
                     onClick={handlePage}
                   >
-                    🠊
+                    <SlArrowRightCircle />
                   </div>
                 </div>
               </div>
