@@ -6,7 +6,8 @@ import {
   SlSocialYoutube,
   SlSocialFacebook,
   SlSocialTwitter,
-  SlSocialInstagram
+  SlSocialInstagram,
+  SlSocialLinkedin
 } from 'react-icons/sl';
 
 const Footer = () => {
@@ -22,6 +23,9 @@ const Footer = () => {
   };
   const handleClickTW = () => {
     window.open('http://www.twitter.com', '_blank');
+  };
+  const handleClickLI = () => {
+    window.open('http://www.linkedin.com', '_blank');
   };
 
   //Media queries
@@ -66,6 +70,12 @@ const Footer = () => {
                 >
                   <SlSocialYoutube />
                 </div>
+                <div
+                  style={styleFooter.imagesFooterPartVerySmall}
+                  onClick={handleClickLI}
+                >
+                  <SlSocialLinkedin />
+                </div>
               </div>
             </div>
           </div>
@@ -103,6 +113,12 @@ const Footer = () => {
                 >
                   <SlSocialYoutube />
                 </div>
+                <div
+                  style={styleFooter.imagesFooterPartMobile}
+                  onClick={handleClickLI}
+                >
+                  <SlSocialLinkedin />
+                </div>
               </div>
             </div>
           </div>
@@ -139,6 +155,12 @@ const Footer = () => {
                   onClick={handleClickYT}
                 >
                   <SlSocialYoutube />
+                </div>
+                <div
+                  style={styleFooter.imagesFooterPartTablet}
+                  onClick={handleClickLI}
+                >
+                  <SlSocialLinkedin />
                 </div>
               </div>
             </div>
