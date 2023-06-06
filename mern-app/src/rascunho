@@ -1,0 +1,42 @@
+@media only screen and (max-width: 17.812em) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    margin-top: 5px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width:17.8125em) and (max-width:19.6875em) { 
+	/*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 19.6876em) and (max-width: 30em) {
+  /*<Slider>*/
+  /*
+  *Buttons and slides (.containerPhotos) are inside of <Slider>.
+  */
+  div.slick-slider.slick-initialized {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: auto;
+    width: 50%;
+  }
+}
