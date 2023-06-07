@@ -17,8 +17,10 @@ const Header = () => {
             />
           </div>
           <button
+            id='login'
             type='button'
             name='Login button'
+            className='buttonSvg'
             style={styleHeader.buttonHeader}
           >
             <SlLogin /> Login
