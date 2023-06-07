@@ -1,42 +1,30 @@
-@media only screen and (max-width: 17.812em) {
-  /*<Slider>*/
-  /*
-  *Buttons and slides (.containerPhotos) are inside of <Slider>.
-  */
-  div.slick-slider.slick-initialized {
-    margin-top: 5px;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: auto;
-    width: 80%;
-  }
-}
+imgInnerBoxMain: {
+  height: 'auto',
+  width: '90%',
+  borderRadius: '10px'
+},
 
-@media only screen and (min-width:17.8125em) and (max-width:19.6875em) { 
-	/*<Slider>*/
-  /*
-  *Buttons and slides (.containerPhotos) are inside of <Slider>.
-  */
-  div.slick-slider.slick-initialized {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: auto;
-    width: 75%;
-  }
-}
+backgroundBox: {
+  backgroundColor: 'var(--light-green)',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',
+  height: 'clamp(4.0625rem, 0.9278rem + 17.5983vw, 9.375rem)',
+  width: 'clamp(5.3125rem, 1.0714rem + 23.8095vw, 12.5rem)',
+  borderRadius: '0.938rem'
+},
 
-@media only screen and (min-width: 19.6876em) and (max-width: 30em) {
-  /*<Slider>*/
-  /*
-  *Buttons and slides (.containerPhotos) are inside of <Slider>.
-  */
-  div.slick-slider.slick-initialized {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: auto;
-    width: 50%;
-  }
-}
+foregroundBox: {
+  backgroundColor: 'var(--gray)',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: 'clamp(4.0625rem, 0.9278rem + 17.5983vw, 9.375rem)',
+  width: 'clamp(5.3125rem, 1.0714rem + 23.8095vw, 12.5rem)',
+  borderRadius: '0.938rem',
+  padding: 'clamp(1rem, -0.676rem + 5.5749vw, 2rem)',
+  marginLeft: 'clamp(2.5rem, 1.3936rem + 6.2112vw, 4.375rem)',
+  marginTop: 'clamp(2.1875rem, 0.8967rem + 7.2464vw, 4.375rem)',
+  fontSize: 'clamp(0.5rem, 0.205rem + 1.6563vw, 1rem)'
+},
