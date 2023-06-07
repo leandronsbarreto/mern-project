@@ -1,28 +1,36 @@
 {
   "home": {
-    "follow": "Follow us:",
-    "headerOne": "HELP REFUGEES ALLIANCE",
-    "read": "Read more",
-    "altLogo": "Help Refugees Alliance logo",
-    "titleLogo": "Help Refugees Alliance logo",
-    "altCoverImg1": "Two sisters playing with pebbles in Hamam al-Alil camp, Iraq.",
-    "altCoverImg2": "Five refugee kids play in a refugee camp in Greece.",
-    "titleCoverImg1": "© Tom Peyre-Costa/NRC, 29th June 2021. Source: Norwegia Refugee Council.",
-    "titleCoverImg2": "© Julie Ricard, Greece, 15th July 2020. Source: Unsplash.",
-    "altAboutImg": "Illustration of a human figure holding the earth.",
-    "altInvolvedImg": "Illustration of a group of people holding posters. One of the posters has the symbol for peace.",
-    "altNewsImg": "Illustration of a speaker",
-    "altDonateImg": "Illustration of two people giving a box to a person.",
-    "headerTwo": "Help Refugees Alliance is a digital platform that counts with a database of volunteers worldwide willing to offer refugees a new home.",
-    "infoBox": [
-      "According to the United Nations High Commissioner for Refugees (UNHCR), at mid-2022 103 million people were forcibly displaced worldwide — 32.5 million are refugees.",
-      "UNHCR also estimates that between 2018 and 2021 an average of between 350,000 and 400,000 children were born into a refugee life per year."
-    ],
-    "about": "About us",
-    "mission": "Our mission",
-    "involved": "Get involed",
-    "donate": "Donate",
-    "news": "News",
-    "press": "Press"
+    "header": {
+      "altLogo": "Help Refugees Alliance Logo",
+      "titleLogo": "Help Refugees Alliance Logo",
+      "altLogin": "Login button" 
+    },
+    "mainContent": {
+      "altCoverImg": "Migrants in Turkey walking towards the Greek border on 1 March 2020",
+      "titleCoverImg": "By Emre Tazegul/AP Photo/NTB Scanpix. Source: Norwegian Refugee Council.", 
+      "altAboutImg": "Illustration of a human figure holding the earth.",
+      "titleAboutImg": "Illustration of a human figure holding the earth.",
+      "altGetInvolvedImg": "Illustration of a group of people holding posters. One of the posters has the symbol for peace.",
+      "titleGetInvolvedImg": "Illustration of a group of people holding posters. One of the posters has the symbol for peace.",
+      "altNewsImg": "Illustration of a speaker.",
+      "titleNewsImg": "Illustration of a speaker.",
+      "altDonateImg": "Illustration of two people giving a box to a person.",
+      "titleDonateImg": "Illustration of two people giving a box to a person.",
+      "about": "About us",
+      "mission": "Our mission",
+      "involved": "Get involed",
+      "donate": "Donate",
+      "news": "News",
+      "press": "Press",
+      "altArrowImg": "Arrow circle image to visit another page"
+    },
+    "footer": {
+      "follow": "Follow us:",
+      "altFacebook": "Facebook logo",
+      "altInstagram": "Instagram logo",
+      "altTwitter": "Twitter logo",
+      "altLinkedin": "Linkedin logo",
+      "altYoutube": "YouTube logo"
+    }
   }
 }
