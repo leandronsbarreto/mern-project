@@ -27,43 +27,53 @@ const Footer = () => {
         <footer style={styleFooter.containerFooter}>
           <div style={styleFooter.footerPart}>
             <div style={styleFooter.containerElementsfooterPart}>
-              <div style={styleFooter.follow}>{data.home.follow}</div>
+              <div style={styleFooter.follow}>{data.home.footer.follow}</div>
               <div style={styleFooter.containerImagesFooterPart}>
-                <div
-                  style={styleFooter.imagesFooterPartVerySmall}
+                <button
+                  style={styleFooter.buttonFooterPartVerySmall}
                   className='buttonSvg'
                   id='instagram'
+                  type='button'
+                  name='Go to Instagram website'
                 >
-                  <SlSocialInstagram />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartVerySmall}
+                  <SlSocialInstagram alt={data.home.footer.altInstagram} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooterPartVerySmall}
                   className='buttonSvg'
                   id='twitter'
+                  type='button'
+                  name='Go to Twitter website'
                 >
-                  <SlSocialTwitter />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartVerySmall}
+                  <SlSocialTwitter alt={data.home.footer.altTwitter} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooterPartVerySmall}
                   className='buttonSvg'
                   id='facebook'
+                  type='button'
+                  name='Go to Facebook website'
                 >
-                  <SlSocialFacebook />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartVerySmall}
+                  <SlSocialFacebook alt={data.home.footer.altFacebook} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooterPartVerySmall}
                   className='buttonSvg'
                   id='youtube'
+                  type='button'
+                  name='Go to YouTube website'
                 >
-                  <SlSocialYoutube />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartVerySmall}
+                  <SlSocialYoutube alt={data.home.footer.altYoutube} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooterPartVerySmall}
                   className='buttonSvg'
                   id='linkedin'
+                  type='button'
+                  name='Go to Linkedin website'
                 >
-                  <SlSocialLinkedin />
-                </div>
+                  <SlSocialLinkedin alt={data.home.footer.altLinkedin} />
+                </button>
               </div>
             </div>
           </div>
@@ -75,43 +85,53 @@ const Footer = () => {
         <footer style={styleFooter.containerFooter}>
           <div style={styleFooter.footerPart}>
             <div style={styleFooter.containerElementsfooterPart}>
-              <div style={styleFooter.follow}>{data.home.follow}</div>
+              <div style={styleFooter.follow}>{data.home.footer.follow}</div>
               <div style={styleFooter.containerImagesFooterPart}>
-                <div
-                  style={styleFooter.imagesFooterPartMobile}
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='instagram'
+                  type='button'
+                  name='Go to Instagram website'
                 >
-                  <SlSocialInstagram />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartMobile}
+                  <SlSocialInstagram alt={data.home.footer.altInstagram} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='twitter'
+                  type='button'
+                  name='Go to Twitter website'
                 >
-                  <SlSocialTwitter />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartMobile}
+                  <SlSocialTwitter alt={data.home.footer.altTwitter} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='facebook'
+                  type='button'
+                  name='Go to Facebook website'
                 >
-                  <SlSocialFacebook />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartMobile}
+                  <SlSocialFacebook alt={data.home.footer.altFacebook} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='youtube'
+                  type='button'
+                  name='Go to YouTube website'
                 >
-                  <SlSocialYoutube />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartMobile}
+                  <SlSocialYoutube alt={data.home.footer.altYoutube} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='linkedin'
+                  type='button'
+                  name='Go to Linkedin website'
                 >
-                  <SlSocialLinkedin />
-                </div>
+                  <SlSocialLinkedin alt={data.home.footer.altLinkedin} />
+                </button>
               </div>
             </div>
           </div>
@@ -123,43 +143,53 @@ const Footer = () => {
         <footer style={styleFooter.containerFooter}>
           <div style={styleFooter.footerPart}>
             <div style={styleFooter.containerElementsfooterPart}>
-              <div style={styleFooter.follow}>{data.home.follow}</div>
+              <div style={styleFooter.follow}>{data.home.footer.follow}</div>
               <div style={styleFooter.containerImagesFooterPart}>
-                <div
-                  style={styleFooter.imagesFooterPartTablet}
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='instagram'
+                  type='button'
+                  name='Go to Instagram website'
                 >
-                  <SlSocialInstagram />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartTablet}
+                  <SlSocialInstagram alt={data.home.footer.altInstagram} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='twitter'
+                  type='button'
+                  name='Go to Twitter website'
                 >
-                  <SlSocialTwitter />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartTablet}
+                  <SlSocialTwitter alt={data.home.footer.altTwitter} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='facebook'
+                  type='button'
+                  name='Go to Facebook website'
                 >
-                  <SlSocialFacebook />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartTablet}
+                  <SlSocialFacebook alt={data.home.footer.altFacebook} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='youtube'
+                  type='button'
+                  name='Go to YouTube website'
                 >
-                  <SlSocialYoutube />
-                </div>
-                <div
-                  style={styleFooter.imagesFooterPartTablet}
+                  <SlSocialYoutube alt={data.home.footer.altYoutube} />
+                </button>
+                <button
+                  style={styleFooter.buttonFooter}
                   className='buttonSvg'
                   id='linkedin'
+                  type='button'
+                  name='Go to Linkedin website'
                 >
-                  <SlSocialLinkedin />
-                </div>
+                  <SlSocialLinkedin alt={data.home.footer.altLinkedin} />
+                </button>
               </div>
             </div>
           </div>
