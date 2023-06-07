@@ -11,23 +11,6 @@ import {
 } from 'react-icons/sl';
 
 const Footer = () => {
-  //window.open -> click event
-  const handleClickYT = () => {
-    window.open('http://www.youtube.com', '_blank');
-  };
-  const handleClickFB = () => {
-    window.open('http://www.facebook.com', '_blank');
-  };
-  const handleClickInst = () => {
-    window.open('http://www.instagram.com', '_blank');
-  };
-  const handleClickTW = () => {
-    window.open('http://www.twitter.com', '_blank');
-  };
-  const handleClickLI = () => {
-    window.open('http://www.linkedin.com', '_blank');
-  };
-
   //Media queries
   const isVerySmall = useMediaQuery({ query: '(max-width: 284px)' });
   const isMobile = useMediaQuery({
@@ -48,31 +31,36 @@ const Footer = () => {
               <div style={styleFooter.containerImagesFooterPart}>
                 <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  onClick={handleClickInst}
+                  className='buttonSvg'
+                  id='instagram'
                 >
                   <SlSocialInstagram />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  onClick={handleClickTW}
+                  className='buttonSvg'
+                  id='twitter'
                 >
                   <SlSocialTwitter />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  onClick={handleClickFB}
+                  className='buttonSvg'
+                  id='facebook'
                 >
                   <SlSocialFacebook />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  onClick={handleClickYT}
+                  className='buttonSvg'
+                  id='youtube'
                 >
                   <SlSocialYoutube />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartVerySmall}
-                  onClick={handleClickLI}
+                  className='buttonSvg'
+                  id='linkedin'
                 >
                   <SlSocialLinkedin />
                 </div>
@@ -91,31 +79,36 @@ const Footer = () => {
               <div style={styleFooter.containerImagesFooterPart}>
                 <div
                   style={styleFooter.imagesFooterPartMobile}
-                  onClick={handleClickInst}
+                  className='buttonSvg'
+                  id='instagram'
                 >
                   <SlSocialInstagram />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartMobile}
-                  onClick={handleClickTW}
+                  className='buttonSvg'
+                  id='twitter'
                 >
                   <SlSocialTwitter />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartMobile}
-                  onClick={handleClickFB}
+                  className='buttonSvg'
+                  id='facebook'
                 >
                   <SlSocialFacebook />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartMobile}
-                  onClick={handleClickYT}
+                  className='buttonSvg'
+                  id='youtube'
                 >
                   <SlSocialYoutube />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartMobile}
-                  onClick={handleClickLI}
+                  className='buttonSvg'
+                  id='linkedin'
                 >
                   <SlSocialLinkedin />
                 </div>
@@ -134,31 +127,36 @@ const Footer = () => {
               <div style={styleFooter.containerImagesFooterPart}>
                 <div
                   style={styleFooter.imagesFooterPartTablet}
-                  onClick={handleClickInst}
+                  className='buttonSvg'
+                  id='instagram'
                 >
                   <SlSocialInstagram />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartTablet}
-                  onClick={handleClickTW}
+                  className='buttonSvg'
+                  id='twitter'
                 >
                   <SlSocialTwitter />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartTablet}
-                  onClick={handleClickFB}
+                  className='buttonSvg'
+                  id='facebook'
                 >
                   <SlSocialFacebook />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartTablet}
-                  onClick={handleClickYT}
+                  className='buttonSvg'
+                  id='youtube'
                 >
                   <SlSocialYoutube />
                 </div>
                 <div
                   style={styleFooter.imagesFooterPartTablet}
-                  onClick={handleClickLI}
+                  className='buttonSvg'
+                  id='linkedin'
                 >
                   <SlSocialLinkedin />
                 </div>
