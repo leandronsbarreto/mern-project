@@ -17,11 +17,48 @@ const styleContent = {
   //Portrait
   containerCoverImgVerySmall: {
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
     height: '30vh',
     width: '95%'
+  },
+
+  innerBoxMain: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    width: '50%'
+    /*     border: '2px dashed',
+    borderColor: 'orange' */
+  },
+
+  imgInnerBoxMain: {
+    height: 'auto',
+    width: '80%',
+    borderRadius: '10px'
+  },
+
+  testanto: {
+    backgroundColor: 'var(--light-green)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    height: '150px',
+    width: '200px',
+    borderRadius: '0.938rem'
+  },
+
+  testanto2: {
+    backgroundColor: 'var(--gray)',
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    height: '150px',
+    width: '200px',
+    borderRadius: '0.938rem',
+    padding: '2rem',
+    marginLeft: '70px',
+    marginTop: '70px'
   },
 
   //<div style={styleContent.containerCoverImg}>
@@ -29,9 +66,6 @@ const styleContent = {
   //Portrait
   containerCoverImgMobile: {
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
     height: '32vh',
     width: '95%'
   },
@@ -192,12 +226,14 @@ const styleContent = {
   //Very small, mobile, and tablets
   //Portrait
   arrow: {
+    backgroundColor: 'var(--light-green)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '1.875rem',
     width: '1.875rem',
-    fontSize: '20px'
+    fontSize: '20px',
+    border: 'none'
   }
 };
 
