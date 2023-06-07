@@ -37,7 +37,7 @@ const styleFooter = {
   //<div style={styleFooter.followTablet}>{data[0].follow}</div>
   //Tablet
   follow: {
-    fontSize: 'clamp(0.5rem, 0.4652rem + 1.1142vw, 1rem)',
+    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
     fontWeight: '500'
   },
 
@@ -52,25 +52,24 @@ const styleFooter = {
     width: '70%'
   },
 
-  //<img style={styleFooter.imagesFooterPartVerySmall}/>
+  //<button style={styleFooter.buttonFooterPartVerySmall}/>
   //Very small
-  imagesFooterPartVerySmall: {
+  buttonFooterPartVerySmall: {
+    backgroundColor: 'transparent',
     height: 'auto',
-    width: '0.8rem'
+    width: '0.8rem',
+    border: 'none'
   },
 
-  //<img style={styleFooter.imagesFooterMobile}/>
-  //Mobile
-  imagesFooterPartMobile: {
+  //<button style={styleFooter.buttonFooterTablet}/>
+  //Mobile and tablets
+  //Portrait
+  buttonFooter: {
+    backgroundColor: 'transparent',
     height: 'auto',
-    width: '0.9rem'
-  },
-
-  //<img style={styleFooter.imagesFooterTablet}/>
-  //Tablet
-  imagesFooterPartTablet: {
-    height: 'auto',
-    width: '1rem'
+    width: '2rem',
+    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
+    border: 'none'
   }
 };
 
