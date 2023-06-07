@@ -242,7 +242,7 @@
 }
 
 /*Bring arrows back*/
-/* @media only screen and (min-width: 197px) {
+@media only screen and (min-width: 197px) {
   .slick-prev:before,
   .slick-next:before {
     background-color: var(--light-green);
@@ -253,7 +253,7 @@
     width: 1.5rem;
     border-radius: 50%;
   }
-} */
+}
 
 /*As screen's width gets smaller, slider's width reduces too*/
 @media only screen and (max-width: 284px) {
