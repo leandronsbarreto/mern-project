@@ -2,8 +2,7 @@
 import styleContent from '../styles/styleContent';
 import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
-// import { useEffect } from 'react';
-import Carousel from './Slider';
+import { useEffect } from 'react';
 import { SlArrowRightCircle } from 'react-icons/sl';
 
 const Content = () => {
@@ -26,20 +25,30 @@ const Content = () => {
     });
   }, []); */
 
-  /*   useEffect(() => {
-    const arrowPrevious = document.querySelector('.slick-arrow.slick-prev');
-    const arrowNext = document.querySelector('.slick-arrow.slick-next');
-    arrowPrevious.addEventListener('click', () => {
-      arrowPrevious.style.backgroundColor = 'var(--gray)';
+  //This code refers to all buttons with SVG images of the home page.
+  //By hitting one of the buttons, client will be redirected to other pages or websites.
+  useEffect(() => {
+    const arrayButtonsSvg = Array.from(document.querySelectorAll('.buttonSvg'));
+    console.log(arrayButtonsSvg);
+    arrayButtonsSvg.forEach(el => {
+      el.addEventListener('click', e => {
+        let currentTargetId = e.currentTarget.id;
+        if (currentTargetId === 'instagram') {
+          window.open(`http://www.instagram.com`);
+        } else if (currentTargetId === 'facebook') {
+          window.open(`http://www.facebook.com`);
+        } else if (currentTargetId === 'twitter') {
+          window.open(`http://www.twitter.com`);
+        } else if (currentTargetId === 'youtube') {
+          window.open(`http://www.youtube.com`);
+        } else if (currentTargetId === 'linkedin') {
+          window.open(`http://www.linkedin.com`);
+        } else {
+          window.open(`http://localhost:3000/${currentTargetId}`);
+        }
+      });
     });
-  }, []); */
-
-  const handlePage = e => {
-    let id = e.target.id;
-    id == 'news'
-      ? window.open(`http://localhost:3000/articles`)
-      : window.open(`http://localhost:3000/${id}`);
-  };
+  }, []);
 
   //Media queries
   const isVerySmall = useMediaQuery({ query: '(max-width: 284px)' });
@@ -56,7 +65,7 @@ const Content = () => {
       {isVerySmall && (
         <main style={styleContent.containerContent}>
           <div style={styleContent.containerCoverImgVerySmall}>
-            {Carousel()}
+            <div style={styleContent.testanto}>Teste</div>
           </div>
           <div style={styleContent.menuBox}>
             <div style={styleContent.menuSubBoxTop}>
@@ -72,13 +81,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.about}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='about'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div style={styleContent.insideSubBoxTopRight}>
@@ -93,13 +102,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.involved}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='getinvolved'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -116,13 +125,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.news}</div>
-                  <div
-                    id='news'
+                  <button
+                    className='buttonSvg'
+                    id='articles'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div style={styleContent.insideSubBoxBottomRight}>
@@ -137,13 +146,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.donate}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='donate'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -154,7 +163,9 @@ const Content = () => {
       {/* Mobile devices, Portrait and Landscape*/}
       {isMobile && (
         <main style={styleContent.containerContent}>
-          <div style={styleContent.containerCoverImgMobile}>{Carousel()}</div>
+          <div style={styleContent.containerCoverImgMobile}>
+            <div style={styleContent.testanto}>Teste</div>
+          </div>
           <div style={styleContent.menuBox}>
             <div style={styleContent.menuSubBoxTop}>
               <div style={styleContent.insideSubBoxTopLeft}>
@@ -169,14 +180,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.about}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='about'
                     style={styleContent.arrow}
-                    onClick={handlePage}
-                    className='arrowRightCircle'
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div style={styleContent.insideSubBoxTopRight}>
@@ -191,14 +201,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.involved}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='getinvolved'
                     style={styleContent.arrow}
-                    onClick={handlePage}
-                    className='arrowRightCircle'
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -215,14 +224,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.news}</div>
-                  <div
-                    id='news'
+                  <button
+                    className='buttonSvg'
+                    id='articles'
                     style={styleContent.arrow}
-                    onClick={handlePage}
-                    className='arrowRightCircle'
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div style={styleContent.insideSubBoxBottomRight}>
@@ -237,14 +245,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.donate}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='donate'
                     style={styleContent.arrow}
-                    onClick={handlePage}
-                    className='arrowRightCircle'
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -255,7 +262,23 @@ const Content = () => {
       {/* iPads, tablets, Portrait and Landscape*/}
       {isTablet && (
         <main style={styleContent.containerContent}>
-          <div style={styleContent.containerCoverImgMobile}>{Carousel()}</div>
+          <div style={styleContent.containerCoverImgMobile}>
+            <div style={styleContent.innerBoxMain}>
+              <img
+                style={styleContent.imgInnerBoxMain}
+                src={process.env.PUBLIC_URL + '/images/emre-tazegul.jpg'}
+              />
+            </div>
+            <div style={styleContent.innerBoxMain}>
+              <div style={styleContent.testanto}>
+                <div style={styleContent.testanto2}>
+                  <h1>
+                    Let&apos;s make <br /> the difference!
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
           <div style={styleContent.menuBox}>
             <div style={styleContent.menuSubBoxTop}>
               <div style={styleContent.insideSubBoxTopLeft}>
@@ -270,13 +293,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.about}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='about'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div style={styleContent.insideSubBoxTopRight}>
@@ -291,13 +314,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.involved}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='getinvolved'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -314,13 +337,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.news}</div>
-                  <div
-                    id='news'
+                  <button
+                    className='buttonSvg'
+                    id='articles'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
               <div style={styleContent.insideSubBoxBottomRight}>
@@ -335,13 +358,13 @@ const Content = () => {
                 </div>
                 <div style={styleContent.miniBlock}>
                   <div>{data.home.donate}</div>
-                  <div
+                  <button
+                    className='buttonSvg'
                     id='donate'
                     style={styleContent.arrow}
-                    onClick={handlePage}
                   >
                     <SlArrowRightCircle />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
