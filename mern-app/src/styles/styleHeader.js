@@ -24,7 +24,8 @@ const styleHeader = {
     alignItems: 'center',
     height: '70%',
     width: '48%',
-    borderRadius: '0.938rem'
+    borderRadius: '0.938rem',
+    padding: '1rem'
   },
 
   imgHeader: {
