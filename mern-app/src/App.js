@@ -1,11 +1,10 @@
 import Home from './pages/home';
-import About from './pages/about';
+import AboutMission from './pages/aboutMission';
 import Donate from './pages/donate';
 import GetInvolved from './pages/getinvolved';
 import Login from './pages/login';
 import NewsPress from './pages/news';
-import NotFoundPage from './pages/not_found';
-import HomeMore from './pages/home_more';
+import NotFoundPage from './pages/notFound';
 import styleApp from './styles/styleApp';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -16,11 +15,10 @@ const App = () => {
       <div style={styleApp.App}>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/aboutandmission' element={<AboutMission />} />
           <Route path='/donate' element={<Donate />} />
           <Route path='/login' element={<Login />} />
           <Route path='/getinvolved' element={<GetInvolved />} />
-          <Route path='/home/more' element={<HomeMore />} />
           <Route path='/articles' element={<NewsPress />} />
           <Route path='/articles/:articleId' element={<NewsPress />} />
           <Route path='*' element={<NotFoundPage />} />
