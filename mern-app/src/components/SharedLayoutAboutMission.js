@@ -39,6 +39,7 @@ const NavBarSharedLayout = () => {
         </ul>
       </nav>
       <div className='main'>
+        <div className='spacing'></div>
         <AnimatePresence mode='wait'>
           <motion.div
             key={selectedTab ? selectedTab.label : 'empty'}
