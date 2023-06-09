@@ -3,11 +3,11 @@
     "header": {
       "altLogo": "Help Refugees Alliance Logo",
       "titleLogo": "Help Refugees Alliance Logo",
-      "altLogin": "Login button" 
+      "altLogin": "Login button"
     },
     "mainContent": {
       "altCoverImg": "Migrants in Turkey walking towards the Greek border on 1 March 2020",
-      "titleCoverImg": "By Emre Tazegul/AP Photo/NTB Scanpix. Source: Norwegian Refugee Council.", 
+      "titleCoverImg": "By Emre Tazegul/AP Photo/NTB Scanpix. Source: Norwegian Refugee Council.",
       "altAboutImg": "Illustration of a human figure holding the earth.",
       "titleAboutImg": "Illustration of a human figure holding the earth.",
       "altGetInvolvedImg": "Illustration of a group of people holding posters. One of the posters has the symbol for peace.",
@@ -18,6 +18,7 @@
       "titleDonateImg": "Illustration of two people giving a box to a person.",
       "about": "About us",
       "mission": "Our mission",
+      "alternative": "Join",
       "involved": "Get involed",
       "donate": "Donate",
       "news": "News",
