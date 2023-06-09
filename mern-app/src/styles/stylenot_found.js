@@ -3,10 +3,10 @@ const styleNotFound = {
   containerNotFound: {
     color: 'var(--black)',
     display: 'flex',
-    justifyContent: 'space-evenly',
+    justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    minHeight: 'auto',
+    height: '100vh',
     width: '100%'
   },
 
