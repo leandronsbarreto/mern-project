@@ -1,7 +1,6 @@
 const styleApp = {
   App: {
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
     textAlign: 'left',
