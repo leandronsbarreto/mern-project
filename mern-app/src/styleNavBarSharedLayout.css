@@ -1,16 +1,20 @@
 .goback {
   background-color: beige;
   height: 5vh;
-  width: 100%
+  width: 100%;
+  position: fixed
 }
 
 nav {
+  background-color: violet;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
   width: 100%;
-  padding: 0.7rem
+  padding: 0.7rem;
+  position: fixed;
+  top: 38px
 }
 
 /*   .initialTabs {
@@ -91,6 +95,10 @@ li.selected {
   width: 100%;
   overflow-y: scroll;
   scroll-behavior: smooth
+}
+
+.spacing {
+  height: 15vh;
 }
 
 .test {
