@@ -1,0 +1,177 @@
+.goback {
+  background-color: beige;
+  height: 5vh;
+  width: 100%
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  padding: 0.7rem
+}
+
+/*   .initialTabs {
+    display: flex;
+    width: 100%;
+  } */
+
+ul,
+li {
+  list-style: none
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 90%;
+  width: 100%
+}
+
+li {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+  width: 40%;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  user-select: none
+}
+
+.underline {
+  background-color: var(--light-green);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 2px
+}
+
+li.selected {
+  background-color: var(--gray)
+}
+
+/*   li button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #000;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+  } */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 85vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth
+}
+
+.test {
+  width: 95%
+}
+
+/* nav {
+    height: 10vh;
+    width: 100%
+  }
+  
+.initialTabs {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 100%
+  }
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%
+  }
+  
+  li {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+.underline {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: purple;
+  }
+  
+  li.selected {
+    background: var(--gray);
+    border-bottom: 1px solid #000;
+  }
+  
+  li button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #000;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+  } */
