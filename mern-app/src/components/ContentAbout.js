@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import styleContentAbout from '../styles/styleContentAbout';
-import data from '../data/dataAboutMission';
+import data from '../data/dataShared';
 
 const ContentAbout = () => {
   return (
