@@ -77,14 +77,12 @@ const styleContentSmallDevices = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 'clamp(2.5rem, -0.0672rem + 21.5054vw, 3.75rem)',
+    height: 'clamp(1.375rem, -0.8937rem + 27.9221vw, 4.0625rem)',
     width: 'clamp(6.25rem, -0.168rem + 53.7634vw, 9.375rem)',
     borderRadius: '0.625rem',
     padding: 'clamp(1rem, -0.676rem + 5.5749vw, 2rem)',
     fontSize: 'clamp(0.4375rem, 0.0524rem + 3.2258vw, 0.625rem)',
-    fontWeight: '150',
-    boxShadow:
-      'clamp(0.625rem, 0.3683rem + 2.1505vw, 0.75rem) clamp(0.3125rem, -0.586rem + 7.5269vw, 0.75rem) var(--light-green)'
+    fontWeight: '150'
   },
 
   //<div style={styleContent.foreroundBox}>
@@ -184,9 +182,7 @@ const styleContentSmallDevices = {
     alignItems: 'center',
     height: '95%',
     width: '48%',
-    borderTopLeftRadius: '0.938rem',
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
-    fontWeight: '500'
+    borderTopLeftRadius: '0.938rem'
   },
 
   //<div style={styleContent.insideSubBoxTopRight}>
@@ -200,9 +196,7 @@ const styleContentSmallDevices = {
     alignItems: 'center',
     height: '95%',
     width: '48%',
-    borderTopRightRadius: '0.938rem',
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
-    fontWeight: '500'
+    borderTopRightRadius: '0.938rem'
   },
 
   //<div style={styleContent.insideSubBoxBottomLeft}>
@@ -216,9 +210,7 @@ const styleContentSmallDevices = {
     justifyContent: 'center',
     height: '95%',
     width: '48%',
-    borderBottomLeftRadius: '0.938rem',
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
-    fontWeight: '500'
+    borderBottomLeftRadius: '0.938rem'
   },
 
   //<div style={styleContent.insideSubBoxBottomRight}>
@@ -232,9 +224,7 @@ const styleContentSmallDevices = {
     justifyContent: 'center',
     height: '95%',
     width: '48%',
-    borderBottomRightRadius: '0.938rem',
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
-    fontWeight: '500'
+    borderBottomRightRadius: '0.938rem'
   },
 
   //<div style={styleContent.miniBlock}>
@@ -280,7 +270,8 @@ const styleContentSmallDevices = {
     height: 'clamp(1rem, 0.4837rem + 2.8986vw, 1.875rem)',
     width: 'clamp(1rem, 0.4837rem + 2.8986vw, 1.875rem)',
     fontSize: '0.5rem',
-    border: 'none'
+    border: '1px solid var(--black)',
+    borderRadius: '50px'
   },
 
   //<div style={styleContent.arrow}>
@@ -293,8 +284,16 @@ const styleContentSmallDevices = {
     alignItems: 'center',
     height: 'clamp(1rem, 0.4837rem + 2.8986vw, 1.875rem)',
     width: 'clamp(1rem, 0.4837rem + 2.8986vw, 1.875rem)',
-    fontSize: 'clamp(0.9375rem, 0.1999rem + 4.1408vw, 2.1875rem)',
-    border: 'none'
+    fontSize: 'clamp(0.625rem, 0.5231rem + 1.2539vw, 1.125rem)',
+    border: '1px solid black',
+    borderRadius: '50px'
+  },
+
+  //<style={styleContentSmallDevices.divText}>
+  //Very small, mobile, tablets
+  //Portrait and landscape
+  divText: {
+    fontSize: 'clamp(0.5rem, 0.3726rem + 1.5674vw, 1.125rem)'
   },
 
   //End orientation portrait
@@ -424,7 +423,7 @@ const styleContentSmallDevices = {
   //Landscape
   imgMiniBlockLand: {
     height: 'auto',
-    width: '29%'
+    width: '20%'
   },
 
   //<div style={styleContent.arrowLand}>
@@ -435,8 +434,11 @@ const styleContentSmallDevices = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: '0.875rem',
-    border: 'none'
+    height: '20px',
+    width: '20px',
+    fontSize: '10px',
+    border: '1px solid var(--black)',
+    borderRadius: '50px'
   }
 };
 
