@@ -82,11 +82,12 @@ a.selected {
 }
 
 .mainShared {
+  background-color: aquamarine;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 83vh;
+  height: 83vh;
   width: 100%;
   overflow: scroll;
 }
@@ -141,5 +142,10 @@ a.selected {
     text-decoration: none;
     user-select: none;
     font-size: clamp(0.625rem, 0.414rem + 2.5974vw, 0.875rem);
+  }
+
+  .spacing {
+    height: 40vh;
+    width: 100%;
   }
 }
