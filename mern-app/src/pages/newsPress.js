@@ -40,12 +40,15 @@ const NewsPress = () => {
                 style={styleFirstPage.img}
               />
             </div>
-            <div style={styleFirstPage.divText}></div>
+            <div style={styleFirstPage.divText}>
+              <div style={styleFirstPage.innerDivTextNews}></div>
+              <div style={styleFirstPage.innerDivTextNews}></div>
+            </div>
           </main>
         </>
       )}
 
-      {/* Mobile devices, iPads, and tablets, Portrait*/}
+      {/* Mobile devices, iPads and tablets, Portrait*/}
       {isMobileAndTablet && (
         <>
           <BackButton />
@@ -61,7 +64,10 @@ const NewsPress = () => {
                 style={styleFirstPage.img}
               />
             </div>
-            <div style={styleFirstPage.divText}></div>
+            <div style={styleFirstPage.divText}>
+              <div style={styleFirstPage.innerDivTextNews}></div>
+              <div style={styleFirstPage.innerDivTextNews}></div>
+            </div>
           </main>
         </>
       )}
