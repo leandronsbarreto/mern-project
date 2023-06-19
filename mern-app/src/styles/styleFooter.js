@@ -78,7 +78,7 @@ const styleFooter = {
   //Tablets
   //Portrait
   follow: {
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
+    fontSize: 'clamp(0.625rem, 0.5231rem + 1.2539vw, 1.125rem)',
     fontWeight: '500'
   },
 
@@ -108,12 +108,13 @@ const styleFooter = {
 
   //<button style={styleFooter.buttonFooterPartVerySmall}/>
   //Very small
-  //Portrait
+  //Portrait and landscape
   buttonFooterPartVerySmall: {
     backgroundColor: 'transparent',
     height: 'auto',
-    width: '0.5rem',
-    border: 'none'
+    width: '1rem',
+    border: 'none',
+    fontSize: 'clamp(0.4375rem, 0.2792rem + 1.9481vw, 0.625rem)'
   },
 
   //<button style={styleFooter.buttonFooterTablet}/>
@@ -123,7 +124,7 @@ const styleFooter = {
     backgroundColor: 'transparent',
     height: 'auto',
     width: '1rem',
-    fontSize: '0.938rem',
+    fontSize: 'clamp(0.625rem, 0.5359rem + 1.0972vw, 1.0625rem)',
     border: 'none'
   },
 
@@ -134,7 +135,7 @@ const styleFooter = {
     backgroundColor: 'transparent',
     height: 'auto',
     width: '2rem',
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
+    fontSize: 'clamp(0.625rem, 0.5359rem + 1.0972vw, 1.0625rem)',
     border: 'none'
   }
 };
