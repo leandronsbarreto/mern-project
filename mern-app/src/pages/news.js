@@ -1,4 +1,4 @@
-const NewsPress = () => {
+const News = () => {
   return (
     <>
       <h1>Leandro</h1>
@@ -6,4 +6,4 @@ const NewsPress = () => {
   );
 };
 
-export default NewsPress;
+export default News;
