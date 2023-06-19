@@ -3,7 +3,6 @@ import styleContentSmallDevices from '../styles/styleContentSmallDevices';
 import data from '../data/dataHome.json';
 import { useMediaQuery } from 'react-responsive';
 import { useEffect } from 'react';
-import { SlArrowRightCircle } from 'react-icons/sl';
 
 const ContentHome = () => {
   //Events
@@ -30,7 +29,6 @@ const ContentHome = () => {
   //By hitting one of the buttons, client will be redirected to other pages or websites.
   useEffect(() => {
     const arrayButtonsSvg = Array.from(document.querySelectorAll('.buttonSvg'));
-    console.log(arrayButtonsSvg);
     arrayButtonsSvg.forEach(el => {
       el.addEventListener('click', e => {
         let currentTargetId = e.currentTarget.id;
@@ -52,7 +50,6 @@ const ContentHome = () => {
   }, []);
 
   //Media queries
-  /*   const beforeVerySmal = useMediaQuery({ query: '(max-width: 190px)' }); */
   const isVerySmall = useMediaQuery({
     query: '(max-width: 284px)'
   });
@@ -84,7 +81,9 @@ const ContentHome = () => {
             <div style={styleContentSmallDevices.menuSubBoxTopVerySmall}>
               <div style={styleContentSmallDevices.insideSubBoxTopLeft}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.about}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.about}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -92,15 +91,15 @@ const ContentHome = () => {
                     id='aboutandmission'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
               <div style={styleContentSmallDevices.insideSubBoxTopRight}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.involved}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.involved}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -108,9 +107,7 @@ const ContentHome = () => {
                     id='getinvolved'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -118,23 +115,25 @@ const ContentHome = () => {
             <div style={styleContentSmallDevices.menuSubBoxBottomVerySmall}>
               <div style={styleContentSmallDevices.insideSubBoxBottomLeft}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.news}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.news}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
                     name='Visit articles page'
-                    id='articles'
+                    id='newsandpress'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
               <div style={styleContentSmallDevices.insideSubBoxBottomRight}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.donate}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.donate}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -142,9 +141,7 @@ const ContentHome = () => {
                     id='donate'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -167,7 +164,9 @@ const ContentHome = () => {
             <div style={styleContentSmallDevices.menuSubBoxTopVerySmall}>
               <div style={styleContentSmallDevices.insideSubBoxTopLeft}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.about}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.about}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -175,15 +174,15 @@ const ContentHome = () => {
                     id='aboutandmission'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
               <div style={styleContentSmallDevices.insideSubBoxTopRight}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.involved}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.involved}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -191,9 +190,7 @@ const ContentHome = () => {
                     id='getinvolved'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -201,23 +198,25 @@ const ContentHome = () => {
             <div style={styleContentSmallDevices.menuSubBoxBottomVerySmall}>
               <div style={styleContentSmallDevices.insideSubBoxBottomLeft}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.news}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.news}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
                     name='Visit articles page'
-                    id='articles'
+                    id='newsandpress'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
               <div style={styleContentSmallDevices.insideSubBoxBottomRight}>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.donate}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.donate}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -225,9 +224,7 @@ const ContentHome = () => {
                     id='donate'
                     style={styleContentSmallDevices.arrowVerySmall}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -279,7 +276,7 @@ const ContentHome = () => {
                   id='aboutandmission'
                   style={styleContentSmallDevices.arrowLand}
                 >
-                  <SlArrowRightCircle alt={data.home.mainContent.altArrowImg} />
+                  <div>🡢</div>
                 </button>
               </div>
             </div>
@@ -306,9 +303,7 @@ const ContentHome = () => {
                     id='getinvolved'
                     style={styleContentSmallDevices.arrowLand}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -333,12 +328,10 @@ const ContentHome = () => {
                     className='buttonSvg'
                     type='button'
                     name='Visit articles page'
-                    id='articles'
+                    id='newsandpress'
                     style={styleContentSmallDevices.arrowLand}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -366,9 +359,7 @@ const ContentHome = () => {
                     id='donate'
                     style={styleContentSmallDevices.arrowLand}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -411,7 +402,9 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.about}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.about}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -419,9 +412,7 @@ const ContentHome = () => {
                     id='aboutandmission'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -437,7 +428,9 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.involved}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.involved}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -445,9 +438,7 @@ const ContentHome = () => {
                     id='getinvolved'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -465,17 +456,17 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.news}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.news}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
                     name='Visit articles page'
-                    id='articles'
+                    id='newsandpress'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -491,7 +482,9 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.donate}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.donate}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -499,9 +492,7 @@ const ContentHome = () => {
                     id='donate'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -544,7 +535,9 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.about}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.about}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -552,9 +545,7 @@ const ContentHome = () => {
                     id='aboutandmission'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -570,7 +561,9 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.involved}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.involved}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -578,9 +571,7 @@ const ContentHome = () => {
                     id='getinvolved'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -598,17 +589,17 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.news}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.news}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
                     name='Visit articles page'
-                    id='articles'
+                    id='newsandpress'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
@@ -624,7 +615,9 @@ const ContentHome = () => {
                   </div>
                 </div>
                 <div style={styleContentSmallDevices.miniBlock}>
-                  <div>{data.home.mainContent.donate}</div>
+                  <div style={styleContentSmallDevices.divText}>
+                    {data.home.mainContent.donate}
+                  </div>
                   <button
                     className='buttonSvg'
                     type='button'
@@ -632,9 +625,7 @@ const ContentHome = () => {
                     id='donate'
                     style={styleContentSmallDevices.arrow}
                   >
-                    <SlArrowRightCircle
-                      alt={data.home.mainContent.altArrowImg}
-                    />
+                    <div>🡢</div>
                   </button>
                 </div>
               </div>
