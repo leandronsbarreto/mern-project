@@ -145,11 +145,10 @@ const styleHeader = {
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    height: 'clamp(0.9375rem, 0.2957rem + 5.3763vw, 1.25rem)',
-    width: 'clamp(3.125rem, 2.4832rem + 5.3763vw, 3.4375rem)',
+    height: 'clamp(0.9375rem, 0.5682rem + 4.5455vw, 1.375rem)',
+    width: 'clamp(3.125rem, 2.5974rem + 6.4935vw, 3.75rem)',
     border: 'none',
     fontSize: 'clamp(0.4375rem, 0.1337rem + 3.4722vw, 0.75rem)',
-    fontWeight: '500',
     borderRadius: 'clamp(0.125rem, -0.1317rem + 2.1505vw, 0.25rem)'
   },
 
@@ -161,10 +160,10 @@ const styleHeader = {
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    height: '40%',
-    width: '20%',
+    height: 'clamp(1.20375rem, 0.7158rem + 2.7391vw, 2.030625rem)',
+    width: 'clamp(3.39125rem, 1.3563rem + 11.4244vw, 6.84rem)',
     border: 'none',
-    fontSize: 'clamp(0.375rem, 0.0431rem + 1.8634vw, 0.9375rem)',
+    fontSize: 'clamp(0.625rem, 0.33rem + 1.6563vw, 1.125rem)',
     fontWeight: '500',
     borderRadius: '0.313rem'
   },
@@ -177,11 +176,12 @@ const styleHeader = {
     display: 'flex',
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    height: '40%',
-    width: '20%',
+    height: 'clamp(1.5625rem, 1.0466rem + 2.8965vw, 2.436875rem)',
+    width: 'clamp(3.75rem, 2.4592rem + 7.2464vw, 5.9375rem)',
     border: 'none',
-    fontSize: 'clamp(0.625rem, 0.4037rem + 1.2422vw, 1rem)',
-    fontWeight: '500',
+    fontFamily: 'Barlow Condensed, sans-serif',
+    fontSize: 'clamp(0.625rem, 0.33rem + 1.6563vw, 1.125rem)',
+    fontWeight: '400',
     borderRadius: '0.313rem'
   }
 };
