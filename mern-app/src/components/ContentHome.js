@@ -6,24 +6,6 @@ import { useEffect } from 'react';
 
 const ContentHome = () => {
   //Events
-  /*   useEffect(() => {
-    const allWithClassRightCircle = Array.from(
-      document.getElementsByClassName('arrowRightCircle')
-    );
-    console.log('I am working');
-    allWithClassRightCircle.forEach(el => {
-      el.addEventListener('mouseover', () => {
-        el.style.backgroundColor = 'var(--gray)';
-        el.style.borderRadius = '50%';
-      });
-      allWithClassRightCircle.forEach(el => {
-        el.addEventListener('mouseout', () => {
-          el.style.backgroundColor = 'transparent';
-        });
-      });
-    });
-  }, []); */
-
   //This code refers to all buttons with SVG images in the home page.
   //useEffect will run after first render.
   //By hitting one of the buttons, client will be redirected to other pages or websites.
