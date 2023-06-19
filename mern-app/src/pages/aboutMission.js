@@ -53,7 +53,7 @@ const AboutMission = () => {
         </>
       )}
 
-      {/* Mobile devices, iPads, and tablets, Portrait*/}
+      {/* Mobile devices, iPads and tablets, Portrait*/}
       {isMobileAndTablet && (
         <>
           <BackButton />
